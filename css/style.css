@@ -1,0 +1,154 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+  }
+  
+  :root{
+    --main-color: #B5D5C5;
+    --secondery-color: #83947a;
+    --btn-clicked-color: #bfa210;
+    
+  }
+  
+  body{
+    background-color:var(--main-color);
+    
+  }
+  
+  .header{
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    color:green
+  }
+  
+  .game{
+  width: 450px;
+  margin: auto;
+  border: var(--btn-clicked-color) 5px solid;
+  
+  }
+  
+  .game-info{
+    text-align: center;
+    
+    background-color: blue
+  
+  
+  }
+  
+  .lives{
+    margin: auto;
+    color: var(--secondery-color);
+    font-family: 'Righteous', cursive;
+  }
+  
+  .game-info-small{
+    background-color: var(--secondery-color);
+    
+  }
+  
+  .timer, 
+  .mines-left,
+  .reset-btn
+  {
+  display: inline-block;
+  text-align: center;
+  
+  /* justify-content: center;
+  align-items: center; */
+  }
+  
+  .timer, 
+  .mines-left{
+    font-family: 'Wallpoet', cursive;
+    background-color: black;
+    color: rgb(45, 11, 124);
+    width: 50px;
+    height: 30px;
+    margin: 10px;
+    padding: 5px;
+  }
+  .best-score {
+    font-size: 15px;
+    font-weight: bold;
+    color: green;
+    text-align: center;
+  }
+  .btn{
+    cursor: pointer;
+    background-color: var(--secondery-color);
+    border: none;
+    padding: 15px;
+    margin: 15px;
+    font-family: 'Righteous', cursive;
+    color: var(--btn-clicked-color);
+    transition: 1s;
+  }
+  
+  .btn:hover{
+    opacity: 0.75;
+  }
+  
+  .reset-btn{
+    background-color: var(--btn-clicked-color);
+    margin-top: 2px;
+  
+  }
+  
+  .board{
+    background-color: var(--secondery-color);
+    
+    height: 420px;
+    margin: auto;
+    padding: 25px;
+  
+  }
+  .used-hint{
+    opacity: 0.5;
+  }
+  table{
+    margin: auto;
+    text-align: center;
+  }
+  .modal {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+  }
+  
+  .modal .hint {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+    
+  
+  footer{
+    text-align: center;
+    padding: 50px;
+    font-family: 'Righteous', cursive;
+    color: var(--btn-clicked-color);
+  }
+  
+  .cell{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    border: rgb(68, 68, 68) solid 5px;
+    font-family: 'Righteous',
+      cursive;
+  }
+  
+  .shown{
+    background-color: var(--btn-clicked-color)
+  }
